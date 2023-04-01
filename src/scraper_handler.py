@@ -1,3 +1,4 @@
+# region Imports
 import os
 import re
 import csv
@@ -6,23 +7,22 @@ import yake
 import boto3
 import logging
 import pandas as pd
-from keywords import print_keywords
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from linkedin_jobs_scraper import LinkedinScraper
 from linkedin_jobs_scraper.events import Events, EventData, EventMetrics
 from linkedin_jobs_scraper.query import Query, QueryOptions, QueryFilters
 from linkedin_jobs_scraper.filters import RelevanceFilters, TimeFilters, TypeFilters, ExperienceLevelFilters, OnSiteOrRemoteFilters
+#endregion
 
 # region Setup
 # Change root logger level (default is WARN)
 logger = logging.getLogger()
-logger.setLevel(level=llogging.INFO)
+logger.setLevel(level=logging.INFO)
 
 nltk.download('wordnet')
 stop = stopwords.words('english')
 lemmatiser = WordNetLemmatizer()
-kw_extractor = yake.KeywordExtractor()
 #endregion
 
 # region Vars
