@@ -15,5 +15,6 @@
     * Push to AWS ECR with `docker push 832214191436.dkr.ecr.ap-south-1.amazonaws.com/linkedinjobscraper:latest`
 
 ## How To Use
+* Create a `.env` file containing the relevant variables from the `scraper.py` script
 * Run the `scraper.py` script
-* Find CSV data in S3
+* Refer to CSV data saved
