@@ -33,6 +33,7 @@ description = []
 
 load_dotenv()
 CHROME_EXECUTABLE_PATH = str(os.getenv('CHROME_EXECUTABLE_PATH'))
+BINARY_LOCATION = str(os.getenv('BINARY_LOCATION'))
 MAX_WORKERS = int(os.getenv('MAX_WORKERS'))
 SLOW_MO = int(os.getenv('SLOW_MO'))
 PAGE_LOAD_TIMEOUT = int(os.getenv('PAGE_LOAD_TIMEOUT'))

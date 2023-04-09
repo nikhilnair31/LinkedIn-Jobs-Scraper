@@ -1,5 +1,4 @@
 *.csv
-chromedriver.exe
 Dockerfile
 README.md
 env
